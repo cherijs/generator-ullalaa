@@ -23,21 +23,23 @@ var UllalaaGenerator = yeoman.generators.Base.extend({
         // Have Yeoman greet the user.
         this.log(yosay('Welcome to the marvelous Ullalaa generator!'));
 
-        // var prompts = [{
-        //     type: 'confirm',
-        //     name: 'someOption',
-        //     message: 'Would you like to enable this option?',
-        //     default: true
-        // }];
+        var prompts = [{
+            type: 'confirm',
+            name: 'someOption',
+            message: 'Would you like to install Ullalaa?',
+            default: true
+        }];
 
-        // this.prompt(prompts, function(props) {
-        //     this.someOption = props.someOption;
+        this.prompt(prompts, function(props) {
+            this.someOption = props.someOption;
 
-        //     done();
-        // }.bind(this));
+            if (props.someOption == true) {
+                done();
+            }
+
+        }.bind(this));
 
 
-         done();
     },
 
     app: function() {
