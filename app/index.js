@@ -187,15 +187,15 @@ Generator.prototype._injectDependencies = function _injectDependencies() {
             logPrefix: ''
         });
 
-        this.logger.log(chalk.bold.red('COMMANDS:'));
-        this.logger.log(chalk.cyan('$ grunt serve ') + '\nstart Grunt server on index.html');
-        this.logger.log(chalk.cyan('$ grunt watch') + '\nTo start compass watch: best use with LiveReload extension\nhttp://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions');
-        this.logger.log(chalk.cyan('$ grunt') + '\nBuild production version');
-        this.logger.log(chalk.cyan('$ bower install jQuery —save') + '\nAdd bower component');
-        this.logger.log(chalk.cyan('$ bower uninstall jQuery —save') + '\nRemove bower component');
-        this.logger.log(chalk.cyan('$ grunt bowerInstall') + '\nTo link added bower components to html');
+        this.logger.log(chalk.red('\nCOMMANDS'));
+        this.logger.log(chalk.cyan('$ grunt serve ') + '\nstart Grunt server on index.html\n');
+        this.logger.log(chalk.cyan('$ grunt watch') + '\nTo start compass watch: best use with LiveReload extension\nhttp://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions\n');
+        this.logger.log(chalk.cyan('$ grunt') + '\nBuild production version\n');
+        this.logger.log(chalk.cyan('$ bower install jQuery —save') + '\nAdd bower component\n');
+        this.logger.log(chalk.cyan('$ bower uninstall jQuery —save') + '\nRemove bower component\n');
+        this.logger.log(chalk.cyan('$ grunt bowerInstall') + '\nTo link added bower components to html\n');
 
-        this.logger.log(chalk.bold.yellow('\nLaunching:$ grunt watch'));
+        this.logger.log('\n' + chalk.yellow('Launching:$ grunt watch'));
         this.spawnCommand('grunt', ['watch']);
     }
 };

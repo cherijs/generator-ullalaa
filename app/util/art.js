@@ -51,6 +51,9 @@ module.exports = {
 
     ].join('\n'),
     go: [
+        '\n',
+        chalk.bold.magenta(''),
+        chalk.bold.magenta(''),
         chalk.bold.magenta(' .d8888b.        d8888888b     d8888888888888    .d88888b. 888     88888888888888888888b. '),
         chalk.bold.magenta('d88P  Y88b      d888888888b   d8888888          d88P" "Y88b888     888888       888   Y88b'),
         chalk.bold.magenta('888    888     d88P88888888b.d88888888          888     888888     888888       888    888'),
@@ -58,6 +61,8 @@ module.exports = {
         chalk.bold.magenta('888  88888   d88P  888888 Y888P 888888          888     888 Y88b d88P 888       8888888P" '),
         chalk.bold.magenta('888    888  d88P   888888  Y8P  888888          888     888  Y88o88P  888       888 T88b  '),
         chalk.bold.magenta('Y88b  d88P d8888888888888   "   888888          Y88b. .d88P   Y888P   888       888  T88b '),
-        chalk.bold.magenta(' "Y8888P88d88P     888888       8888888888888    "Y88888P"     Y8P    8888888888888   T88b')
+        chalk.bold.magenta(' "Y8888P88d88P     888888       8888888888888    "Y88888P"     Y8P    8888888888888   T88b'),
+        chalk.bold.magenta(''),
+        chalk.bold.magenta('')
     ].join('\n')
 };
