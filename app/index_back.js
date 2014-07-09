@@ -10,20 +10,12 @@ var art = require('./util/art');
 var Logger = require('./util/log');
 
 
-
-
-
 var Generator = module.exports = function Generator(args, options) {
-
-
-
     yeoman.generators.Base.apply(this, arguments);
-
     this.argument('appname', {
         type: String,
         required: false
     });
-
     this.appname = this.appname || path.basename(process.cwd());
     this.appname = this._.camelize(this._.slugify(this._.humanize(this.appname)));
 
@@ -33,7 +25,6 @@ var Generator = module.exports = function Generator(args, options) {
         required: 'false'
     });
     this.env.options['app-suffix'] = this.options['app-suffix'];
-
 
     this.on('end', function() {
         // var enabledComponents = [];
@@ -48,9 +39,9 @@ var Generator = module.exports = function Generator(args, options) {
             callback: this._injectDependencies.bind(this)
         });
 
+
+
     });
-
-
 
     this.pkg = require('../package.json');
 
