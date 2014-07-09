@@ -6,8 +6,8 @@ var path = require('path');
 var yeoman = require('yeoman-generator');
 var yosay = require('yosay');
 var chalk = require('chalk');
-var art = require('../util/art');
-var Logger = require('../util/log');
+var art = require('./util/art');
+var Logger = require('./util/log');
 
 
 var Generator = module.exports = function Generator(args, options) {
