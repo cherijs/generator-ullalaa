@@ -25,6 +25,35 @@ Finally, initiate the generator:
 $ yo Ullalaa
 ```
 
+
+### Grunt commands
+
+To start Grunt server type:
+
+```bash
+$ grunt serve
+```
+ To build production build
+
+```bash
+$ grunt
+```
+To add bower component
+```bash
+$ bower install jQuery —save
+```
+
+To remove bower component
+```bash
+$ bower uninstall jQuery —save
+```
+
+To link added bower components to html
+```bash
+$ grunt wiredep
+```
+
+
 ### Getting To Know Yeoman
 
 Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
