@@ -28,13 +28,14 @@ $ yo ullalaa
 
 ### Grunt commands
 
-To start Grunt server on index.htmp type:
+To start Grunt server on index.html type:
 
 ```bash
 $ grunt serve
 ```
 
-To start compass watch:
+To start compass watch: best use with LiveReload extension
+http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions
 
 ```bash
 $ grunt watch
