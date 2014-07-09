@@ -131,6 +131,7 @@ Generator.prototype.askForCompass = function askForCompass() {
 Generator.prototype.copyFiles = function copyFiles() {
 
     this.directory('_dev');
+    this.directory('test');
 
     this.mkdir('_dev/fonts');
     this.mkdir('_dev/images');

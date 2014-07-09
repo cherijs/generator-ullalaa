@@ -1,5 +1,5 @@
 {
-    "name": "<%= _.slugify(appname) %>",
+    "name": "Ullalaa",
     "version": "0.0.0",
     "dependencies": {},
     "devDependencies": {
