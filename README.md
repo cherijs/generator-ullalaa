@@ -22,7 +22,7 @@ $ npm install -g generator-ullalaa
 Finally, initiate the generator:
 
 ```bash
-$ yo Ullalaa
+$ yo ullalaa
 ```
 
 
@@ -50,7 +50,7 @@ $ bower uninstall jQuery —save
 
 To link added bower components to html
 ```bash
-$ grunt wiredep
+$ grunt bowerInstall
 ```
 
 
