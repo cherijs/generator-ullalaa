@@ -132,6 +132,9 @@ Generator.prototype.copyFiles = function copyFiles() {
 
     this.directory('_dev');
 
+    this.mkdir('_dev/fonts');
+    this.mkdir('_dev/images');
+
     this.copy('_package.json', 'package.json');
     this.copy('_bower.json', 'bower.json');
 
