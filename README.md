@@ -28,11 +28,20 @@ $ yo ullalaa
 
 ### Grunt commands
 
-To start Grunt server type:
+To start Grunt server on index.htmp type:
 
 ```bash
 $ grunt serve
 ```
+
+To start compass watch:
+
+```bash
+$ grunt watch
+```
+
+
+
  To build production build
 
 ```bash

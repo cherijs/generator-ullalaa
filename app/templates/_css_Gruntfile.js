@@ -61,6 +61,7 @@ module.exports = function(grunt) {
                 },
                 files: [
                     '<%= config.dev %>/{,*/}*.html',
+                    '<%= config.dev %>/{,*/}*.php',
                     '.tmp/styles/{,*/}*.css',
                     '<%= config.dev %>/images/{,*/}*'
                 ]
