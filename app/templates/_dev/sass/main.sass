@@ -1,25 +1,48 @@
-// @import compass/reset
+@import compass/reset
 @import compass/css3
+
+@import fonts
 @import mixins
 
 $col: black
 
+html
+    font-size: 62.5%
+
 body
     background: pink
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-family: $main_font
+    +font-size(1.8)
     color: $col
 
 .hero-unit
     margin: 50px auto 0 auto
     width: 300px
-    font-size: 18px
-    font-weight: 200
+    font-weight: 300
     line-height: 30px
     background-color: #eeeeee
     border-radius: 6px
     padding: 60px
+    box-sizing: border-box
+    ul
+        li
+            list-style-type: disc
+            margin-left: 20px
+    +respond($phone)
+        width: 100%
+        border-radius: 0px
+        margin: 0 auto 0 auto
+
+    div.logo
+        width: 150px
+        height: 150px
+        +center-block
+        background: url("/images/logo.png") no-repeat
+        +image-2x("/images/logo2x.png", 150px, 150px)
+        //@include abs-pos(10px, 10px, 5px, 15px);
     h1
-        font-size: 60px
+        +font-size(6)
+        font-weight: 700
         line-height: 1
         letter-spacing: -1px
         transition: all 0.25s ease-out 0s

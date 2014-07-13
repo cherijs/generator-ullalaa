@@ -8,7 +8,7 @@
         <title>Ulalaa</title>
         <meta name="description" content="">
         <link type="text/plain" rel="author" href="humans.txt" />
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" >
         
         <link rel="shortcut icon" href="/favicon/favicon.ico">
         <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-touch-icon-57x57.png">
@@ -51,15 +51,8 @@
 
 
         <div class="hero-unit">
-<?
-// var_dump($_REQUEST);
-// var_dump($_SERVER['REQUEST_URI']);
-
-
-
-
-?>
-          <h1>Ullalaa boilerplate! :)</h1>
+          <div class="logo"></div>
+          <h1>Ullalaa</h1>
           <p>You now have</p>
           <ul>
             <li>HTML5 Boilerplate</li>
@@ -67,6 +60,7 @@
             <li>Modernizr</li>
           </ul>
         </div>
+
 
 
         <!-- build:js /scripts/vendor.js -->

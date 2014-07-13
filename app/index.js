@@ -217,7 +217,7 @@ Generator.prototype._injectDependencies = function _injectDependencies() {
             chalk.bold.red('Steps you need to do!!!'),
             chalk.bold.yellow('1. Laounch MAMP and make virtual host to this (root) folder! ex: http://' + this.customHost),
             chalk.bold.yellow('2. start grunt server with command: ') + chalk.bold.cyan('$ grunt'),
-            chalk.bold.cyan('code happy :)'),
+            chalk.bold.cyan('Happy Coding! :)'),
             chalk.bold.magenta(''),
         ].join('\n');
 
