@@ -5,6 +5,7 @@
 
 ## Getting Started
 
+
 ```bash
 $ npm install -g yo
 ```
@@ -26,28 +27,23 @@ $ yo ullalaa
 ```
 
 
+
+### Steps you need to do!!!
+
+1. Laounch MAMP and make virtual host to this (root) folder! ex: http://localhost
+2. start grunt server with command: $ grunt
+
+code happy :)
+
+
 ### Grunt commands
 
-To start Grunt server on index.html type:
-
-```bash
-$ grunt serve
-```
-
-To start compass watch: best use with LiveReload extension
-http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions
-
-```bash
-$ grunt watch
-```
-
-
-
- To build production build
+To start Grunt server (compass, browsersync) type:
 
 ```bash
 $ grunt
 ```
+
 To add bower component
 ```bash
 $ bower install jQuery —save
@@ -58,9 +54,16 @@ To remove bower component
 $ bower uninstall jQuery —save
 ```
 
-To link added bower components to html
+To link added bower components to html (no need to do it, if you adding bower components like example before and you are in server mode)
 ```bash
 $ grunt bowerInstall
+```
+
+
+ To build production build
+
+```bash
+$ grunt build
 ```
 
 

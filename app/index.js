@@ -125,12 +125,12 @@ Generator.prototype.askForCompass = function askForCompass() {
     var cb = this.async();
 
     this.prompt([{
-        type: 'confirm',
-        name: 'compass',
-        message: 'Would you like to use Sass (with Compass)?',
-        default: true
+        // type: 'confirm',
+        name: 'customHost',
+        message: 'What will be your virtual Host name (MAMP)? ex: "localhost" ',
+        default: 'localhost'
     }], function(props) {
-        this.compass = props.compass;
+        this.customHost = props.customHost;
 
         cb();
     }.bind(this));
@@ -147,21 +147,31 @@ Generator.prototype.copyFiles = function copyFiles() {
 
     this.copy('_package.json', 'package.json');
     this.copy('_bower.json', 'bower.json');
+    // this.copy('_config.rb', '_dev/config.rb');
+    // this.copy('_Gruntfile.js', 'Gruntfile.js');
+
+    var context = {
+        customHost: this.customHost,
+        config: {
+            dev: '<%= config.dev %>',
+            prod: '<%= config.prod %>'
+        }
+    };
+
+    this.template('_Gruntfile.js', 'Gruntfile.js', context);
+
+    this.copy('root_htaccess', '.htaccess');
+    this.copy('prod_htaccess', '_htaccess');
+
 
     this.copy('editorconfig', '.editorconfig');
     this.copy('jshintrc', '.jshintrc');
     this.copy('gitignore', '.gitignore');
     this.copy('gitattributes', '.gitattributes');
 
-    if (this.compass) {
-        this.copy('_config.rb', '_dev/config.rb');
-        this.directory('sass', '_dev/sass');
-        this.copy('_Gruntfile.js', 'Gruntfile.js');
-    } else {
-        this.copy('_css_Gruntfile.js', 'Gruntfile.js');
-        this.copy('_nosass_index.html', '_dev/index.html');
 
-    }
+
+
 
     // var cssFile = 'styles/main.' + (this.compass ? 's' : '') + 'css';
     // this.copy(
@@ -183,19 +193,49 @@ Generator.prototype._injectDependencies = function _injectDependencies() {
             '\n' + chalk.yellow.bold('grunt wiredep')
         );
     } else {
-        this.logger.log(art.go, {
+        this.logger.log(art.done, {
             logPrefix: ''
         });
 
-        this.logger.log(chalk.red('\nCOMMANDS'));
-        this.logger.log(chalk.cyan('$ grunt serve ') + '\nstart Grunt server on index.html\n');
-        this.logger.log(chalk.cyan('$ grunt watch') + '\nTo start compass watch: best use with LiveReload extension\nhttp://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions\n');
-        this.logger.log(chalk.cyan('$ grunt') + '\nBuild production version\n');
-        this.logger.log(chalk.cyan('$ bower install jQuery —save') + '\nAdd bower component\n');
-        this.logger.log(chalk.cyan('$ bower uninstall jQuery —save') + '\nRemove bower component\n');
-        this.logger.log(chalk.cyan('$ grunt bowerInstall') + '\nTo link added bower components to html\n');
 
-        this.logger.log('\n' + chalk.yellow('Launching:$ grunt watch'));
-        this.spawnCommand('grunt', ['watch']);
+        var comm = [
+            '\n',
+            chalk.bold.red('ADDITIONAL COMMANDS'),
+            chalk.bold.red(''),
+            chalk.bold.cyan('$ grunt'),
+            chalk.white('start Grunt server (compass, browsersync)'),
+            chalk.bold.cyan(''),
+            chalk.bold.cyan('$ grunt build'),
+            chalk.white('Build minified production version in folder _prod'),
+            chalk.bold.cyan(''),
+            chalk.bold.cyan('$ bower install jQuery —save'),
+            chalk.white('Add bower component'),
+            chalk.bold.cyan(''),
+            chalk.bold.cyan('$grunt bowerInstall'),
+            chalk.white('To link added bower components to html, happens automaticly if grunt server running'),
+            chalk.bold.cyan(''),
+            chalk.bold.red('Steps you need to do!!!'),
+            chalk.bold.yellow('1. Laounch MAMP and make virtual host to this (root) folder! ex: http://' + this.customHost),
+            chalk.bold.yellow('2. start grunt server with command: ') + chalk.bold.cyan('$ grunt'),
+            chalk.bold.cyan('code happy :)'),
+            chalk.bold.magenta(''),
+        ].join('\n');
+
+
+        this.logger.log(comm, {
+            logPrefix: ''
+        });
+
+
+        // this.logger.log(chalk.red('\nCOMMANDS'));
+        // this.logger.log(chalk.cyan('$ grunt ') + '\nstart Grunt server (compass, browsersync) \n');
+        // this.logger.log(chalk.cyan('$ grunt build') + '\nBuild production version in folder _prod \n');
+        // this.logger.log(chalk.cyan('$ bower install jQuery —save') + '\nAdd bower component\n');
+        // this.logger.log(chalk.cyan('$ bower uninstall jQuery —save') + '\nRemove bower component\n');
+        // this.logger.log(chalk.cyan('$ grunt bowerInstall') + '\nTo link added bower components to html\n');
+
+        // this.logger.log(chalk.yellow('Launching:$ grunt server'));
+        // this.spawnCommand('grunt');
+        // this.spawnCommand('grunt', ['watch']);
     }
 };

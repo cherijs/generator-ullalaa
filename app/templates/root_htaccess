@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase   /_dev
+RewriteRule ^$ /_dev/ [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/_dev/
+RewriteRule ^(.*)$ /_dev/$1
+RewriteCond %{SCRIPT_FILENAME} -d
+#RewriteRule ^_dev/(.*[^/])$ http://localhost/$1/ [R=301]

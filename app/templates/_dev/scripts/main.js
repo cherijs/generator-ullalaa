@@ -26,7 +26,7 @@
 
     $(function() {
         // JQUERY READY, MY FUNCTIONS HERE
-        console.log('Ulalaa boilerplate ready.');
+        console.log('Ulalaa boilerplate ready!!!');
 
     });
 

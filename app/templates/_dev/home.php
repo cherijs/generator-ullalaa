@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <title>Ullalaa</title>
+        <title>Ulalaa</title>
         <meta name="description" content="">
         <link type="text/plain" rel="author" href="humans.txt" />
         <meta name="viewport" content="width=device-width">
@@ -30,15 +30,17 @@
         <!-- GENERATED http://realfavicongenerator.net -->
 
 
-        <!-- build:css styles/vendor.css -->
+        <!-- build:css /styles/vendor.css -->
         <!-- bower:css -->
         <!-- endbower -->
         <!-- endbuild -->
-        <!-- build:css(.tmp) styles/main.css -->
-        <link rel="stylesheet" href="styles/main.css">
+
+        <!-- build:css(.tmp) /styles/main.css -->
+        <link rel="stylesheet" href="/styles/main.css">
         <!-- endbuild -->
-        <!-- build:js scripts/vendor/modernizr.js -->
-        <script src="../bower_components/modernizr/modernizr.js"></script>
+
+        <!-- build:js /scripts/vendor/modernizr.js -->
+        <script src="/../bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
 
     </head>
@@ -49,16 +51,25 @@
 
 
         <div class="hero-unit">
-          <h1>Ullalaa boilerplate!</h1>
+<?
+// var_dump($_REQUEST);
+// var_dump($_SERVER['REQUEST_URI']);
+
+
+
+
+?>
+          <h1>Ullalaa boilerplate! :)</h1>
           <p>You now have</p>
           <ul>
             <li>HTML5 Boilerplate</li>
+            <li>Sass</li>
             <li>Modernizr</li>
           </ul>
         </div>
 
 
-        <!-- build:js scripts/vendor.js -->
+        <!-- build:js /scripts/vendor.js -->
         <!-- bower:js -->
         <script src="../bower_components/jquery/dist/jquery.js"></script>
         <!-- endbower -->
@@ -74,8 +85,8 @@
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
 
-        <!-- build:js({_dev,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
+        <!-- build:js({_dev,.tmp}) /scripts/main.js -->
+        <script src="/scripts/main.js"></script>
         <!-- endbuild -->
 </body>
 </html>

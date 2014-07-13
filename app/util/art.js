@@ -50,19 +50,31 @@ module.exports = {
         chalk.bold.cyan('                                                ')
 
     ].join('\n'),
-    go: [
+    done: [
         '\n',
         chalk.bold.magenta(''),
         chalk.bold.magenta(''),
-        chalk.bold.magenta(' .d8888b.        d8888888b     d8888888888888    .d88888b. 888     88888888888888888888b. '),
-        chalk.bold.magenta('d88P  Y88b      d888888888b   d8888888          d88P" "Y88b888     888888       888   Y88b'),
-        chalk.bold.magenta('888    888     d88P88888888b.d88888888          888     888888     888888       888    888'),
-        chalk.bold.magenta('888           d88P 888888Y88888P8888888888      888     888Y88b   d88P8888888   888   d88P'),
-        chalk.bold.magenta('888  88888   d88P  888888 Y888P 888888          888     888 Y88b d88P 888       8888888P" '),
-        chalk.bold.magenta('888    888  d88P   888888  Y8P  888888          888     888  Y88o88P  888       888 T88b  '),
-        chalk.bold.magenta('Y88b  d88P d8888888888888   "   888888          Y88b. .d88P   Y888P   888       888  T88b '),
-        chalk.bold.magenta(' "Y8888P88d88P     888888       8888888888888    "Y88888P"     Y8P    8888888888888   T88b'),
         chalk.bold.magenta(''),
-        chalk.bold.magenta('')
+        chalk.bold.magenta(''),
+        chalk.bold.magenta(''),
+        chalk.bold.magenta(''),
+        chalk.bold.magenta(''),
+        chalk.bold.magenta(''),
+        chalk.bold.magenta(''),
+        chalk.bold.magenta(''),
+        chalk.bold.magenta(''),
+        chalk.bold.magenta(' 8 888888888o.          ,o888888o.     b.             8 8 8888888888   '),
+        chalk.bold.magenta(' 8 8888    `^888.    . 8888     `88.   888o.          8 8 8888         '),
+        chalk.bold.magenta(' 8 8888        `88. ,8 8888       `8b  Y88888o.       8 8 8888         '),
+        chalk.bold.magenta(' 8 8888         `88 88 8888        `8b .`Y888888o.    8 8 8888         '),
+        chalk.bold.magenta(' 8 8888          88 88 8888         88 8o. `Y888888o. 8 8 888888888888 '),
+        chalk.bold.magenta(' 8 8888          88 88 8888         88 8`Y8o. `Y88888o8 8 8888         '),
+        chalk.bold.magenta(' 8 8888         ,88 88 8888        ,8P 8   `Y8o. `Y8888 8 8888         '),
+        chalk.bold.magenta(' 8 8888        ,88  `8 8888       ,8P  8      `Y8o. `Y8 8 8888         '),
+        chalk.bold.magenta(' 8 8888    ,o88P     ` 8888     ,88    8         `Y8o.` 8 8888         '),
+        chalk.bold.magenta(' 8 888888888P           `8888888P      8            `Yo 8 888888888888 '),
+        chalk.bold.magenta(''),
+
+        chalk.bold.cyan('')
     ].join('\n')
 };

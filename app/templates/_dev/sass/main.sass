@@ -1,7 +1,11 @@
+// @import compass/reset
+@import compass/css3
+@import mixins
+
 $col: black
 
 body
-    background: #fafafa
+    background: pink
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
     color: $col
 
@@ -18,3 +22,6 @@ body
         font-size: 60px
         line-height: 1
         letter-spacing: -1px
+        transition: all 0.25s ease-out 0s
+        &:hover
+            color: pink
