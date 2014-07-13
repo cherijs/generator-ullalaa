@@ -33,7 +33,7 @@ $ yo ullalaa
 1. Laounch MAMP and make virtual host to this (root) folder! ex: http://localhost
 2. start grunt server with command: $ grunt
 
-code happy :)
+Happy coding :)
 
 
 ### Grunt commands
