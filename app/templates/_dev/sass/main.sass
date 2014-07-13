@@ -24,15 +24,6 @@ body
     border-radius: 6px
     padding: 60px
     box-sizing: border-box
-    ul
-        li
-            list-style-type: disc
-            margin-left: 20px
-    +respond($phone)
-        width: 100%
-        border-radius: 0px
-        margin: 0 auto 0 auto
-
     div.logo
         width: 150px
         height: 150px
@@ -40,6 +31,10 @@ body
         background: url("/images/logo.png") no-repeat
         +image-2x("/images/logo2x.png", 150px, 150px)
         //@include abs-pos(10px, 10px, 5px, 15px);
+    ul
+        li
+            list-style-type: disc
+            margin-left: 20px
     h1
         +font-size(6)
         font-weight: 700
@@ -48,3 +43,7 @@ body
         transition: all 0.25s ease-out 0s
         &:hover
             color: pink
+    +respond($phone)
+        width: 100%
+        border-radius: 0px
+        margin: 0 auto 0 auto

@@ -46,12 +46,12 @@ $ grunt
 
 To add bower component
 ```bash
-$ bower install jQuery —save
+$ bower install jQuery -—save
 ```
 
 To remove bower component
 ```bash
-$ bower uninstall jQuery —save
+$ bower uninstall jQuery -—save
 ```
 
 To link added bower components to html (no need to do it, if you adding bower components like example before and you are in server mode)

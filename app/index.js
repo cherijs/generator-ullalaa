@@ -208,7 +208,7 @@ Generator.prototype._injectDependencies = function _injectDependencies() {
             chalk.bold.cyan('$ grunt build'),
             chalk.white('Build minified production version in folder _prod'),
             chalk.bold.cyan(''),
-            chalk.bold.cyan('$ bower install jQuery —save'),
+            chalk.bold.cyan('$ bower install jQuery -—save'),
             chalk.white('Add bower component'),
             chalk.bold.cyan(''),
             chalk.bold.cyan('$grunt bowerInstall'),
@@ -230,8 +230,8 @@ Generator.prototype._injectDependencies = function _injectDependencies() {
         // this.logger.log(chalk.red('\nCOMMANDS'));
         // this.logger.log(chalk.cyan('$ grunt ') + '\nstart Grunt server (compass, browsersync) \n');
         // this.logger.log(chalk.cyan('$ grunt build') + '\nBuild production version in folder _prod \n');
-        // this.logger.log(chalk.cyan('$ bower install jQuery —save') + '\nAdd bower component\n');
-        // this.logger.log(chalk.cyan('$ bower uninstall jQuery —save') + '\nRemove bower component\n');
+        // this.logger.log(chalk.cyan('$ bower install jQuery -—save') + '\nAdd bower component\n');
+        // this.logger.log(chalk.cyan('$ bower uninstall jQuery -—save') + '\nRemove bower component\n');
         // this.logger.log(chalk.cyan('$ grunt bowerInstall') + '\nTo link added bower components to html\n');
 
         // this.logger.log(chalk.yellow('Launching:$ grunt server'));
