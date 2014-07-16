@@ -3,6 +3,7 @@
 
 @import fonts
 @import mixins
+@import ceaser-easing/ceaser
 
 $col: black
 
@@ -10,7 +11,7 @@ html
     font-size: 62.5%
 
 body
-    background: pink
+    background: #31cfff
     font-family: $main_font
     +font-size(1.8)
     color: $col
@@ -27,6 +28,8 @@ body
     div.logo
         width: 150px
         height: 150px
+        +animation("ulla 0.25s ease-out 0.0s infinite alternate")
+        position: relative
         +center-block
         background: url("/images/logo.png") no-repeat
         +image-2x("/images/logo2x.png", 150px, 150px)
@@ -40,10 +43,16 @@ body
         font-weight: 700
         line-height: 1
         letter-spacing: -1px
-        transition: all 0.25s ease-out 0s
+        transition: all 0.5s ceaser($easeInExpo)
         &:hover
             color: pink
     +respond($phone)
         width: 100%
         border-radius: 0px
         margin: 0 auto 0 auto
+
++keyframes(ulla)
+    0%
+        top: 0px
+    100%
+        top: -10px

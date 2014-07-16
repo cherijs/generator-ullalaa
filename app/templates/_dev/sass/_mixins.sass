@@ -101,3 +101,28 @@ $retina: "screen and (-webkit-min-device-pixel-ratio: 2)"
     bottom: $bottom
     left: $left
     position: absolute
+
+=animation($animate...)
+    $max: length($animate)
+    $animations: ""
+    @for $i from 1 through $max
+        $animations: #{$animations + nth($animate, $i)}
+        @if $i < $max
+            $animations: #{$animations + ", "}
+    -webkit-animation: $animations
+    -moz-animation: $animations
+    -o-animation: $animations
+    animation: $animations
+
+=keyframes($animationName)
+    @-webkit-keyframes #{$animationName}
+        @content
+
+    @-moz-keyframes #{$animationName}
+        @content
+
+    @-o-keyframes #{$animationName}
+        @content
+
+    @keyframes #{$animationName}
+        @content

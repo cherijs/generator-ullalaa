@@ -1,6 +1,6 @@
 {
     "name": "generator-ullalaa",
-    "version": "0.0.9",
+    "version": "0.0.11",
     "description": "Scaffold out a front-end web",
     "license": "MIT",
     "main": "app/index.js",
