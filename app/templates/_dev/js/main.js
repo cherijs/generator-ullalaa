@@ -1,3 +1,4 @@
+/* global Gumby,jQuery */
 (function($, window, document, undefined) {
     'use strict';
 
@@ -27,6 +28,11 @@
     $(function() {
         // JQUERY READY, MY FUNCTIONS HERE
         console.log('Ulalaa boilerplate ready!!!');
+
+        if (Gumby.isOldie) {
+            $('#warning').addClass('active');
+        }
+
 
     });
 

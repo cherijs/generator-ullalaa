@@ -34,7 +34,7 @@ module.exports = function(grunt) {
                 tasks: ['bowerInstall']
             },
             js: {
-                files: ['<%= config.dev %>/scripts/{,*/}*.js'],
+                files: ['<%= config.dev %>/js/{,*/}*.js'],
                 // tasks: ['jshint'],
                 options: {
                     // livereload: true
@@ -57,7 +57,7 @@ module.exports = function(grunt) {
         browserSync: {
             dev: {
                 bsFiles: {
-                    src: ['<%= config.dev %>/styles/{,*/}*.css', '<%= config.dev %>/scripts/{,*/}*.js', '<%= config.dev %>/{,*/}*.php', '<%= config.dev %>/{,*/}*.php']
+                    src: ['<%= config.dev %>/styles/{,*/}*.css', '<%= config.dev %>/js/{,*/}*.js', '<%= config.dev %>/{,*/}*.php', '<%= config.dev %>/{,*/}*.php']
                 },
                 options: {
 
@@ -91,8 +91,8 @@ module.exports = function(grunt) {
             },
             all: [
                 'Gruntfile.js',
-                // '<%= config.dev %>/scripts/{,*/}*.js',
-                '!<%= config.dev %>/scripts/vendor/*'
+                // '<%= config.dev %>/js/{,*/}*.js',
+                '!<%= config.dev %>/js/vendor/*'
 
             ]
         },
@@ -105,7 +105,7 @@ module.exports = function(grunt) {
                     config: '<%= config.dev %>/config.rb',
                     sassDir: '<%= config.dev %>/sass',
                     cssDir: '<%= config.dev %>/styles',
-                    javascriptsDir: '<%= config.dev %>/scripts',
+                    javascriptsDir: '<%= config.dev %>/js',
                     imagesDir: '<%= config.dev %>/images',
                     fontsDir: '<%= config.dev %>/fonts',
                     outputStyle: 'compressed',
@@ -147,7 +147,7 @@ module.exports = function(grunt) {
             dist: {
                 files: {
                     src: [
-                        '<%= config.prod %>/scripts/{,*/}*.js',
+                        '<%= config.prod %>/js/{,*/}*.js',
                         '<%= config.prod %>/styles/{,*/}*.css',
                         '<%= config.prod %>/images/{,*/}*.*',
                         '<%= config.prod %>/styles/fonts/{,*/}*.*',
@@ -236,8 +236,8 @@ module.exports = function(grunt) {
         // uglify: {
         //     dist: {
         //         files: {
-        //             '<%= config.prod %>/scripts/scripts.js': [
-        //                 '<%= config.prod %>/scripts/scripts.js'
+        //             '<%= config.prod %>/js/scripts.js': [
+        //                 '<%= config.prod %>/js/scripts.js'
         //             ]
         //         }
         //     }
@@ -259,6 +259,7 @@ module.exports = function(grunt) {
                         '.htaccess',
                         '404.html',
                         'crossdomain.xml',
+                        // 'images/{,*/}*.webp',
                         'images/{,*/}*.*',
                         '{,*/}*.php',
                         'fonts/{,*/}*.*',
@@ -289,12 +290,12 @@ module.exports = function(grunt) {
         modernizr: {
             dist: {
                 devFile: 'bower_components/modernizr/modernizr.js',
-                outputFile: '<%= config.prod %>/scripts/vendor/modernizr.js',
+                outputFile: '<%= config.prod %>/js/vendor/modernizr.js',
                 files: {
                     src: [
-                        '<%= config.prod %>/scripts/{,*/}*.js',
+                        '<%= config.prod %>/js/{,*/}*.js',
                         '<%= config.prod %>/styles/{,*/}*.css',
-                        '!<%= config.prod %>/scripts/vendor/*'
+                        '!<%= config.prod %>/js/vendor/*'
                     ]
                 },
                 uglify: true
@@ -330,7 +331,7 @@ module.exports = function(grunt) {
         'modernizr',
         'rev',
         'usemin',
-        'htmlmin',
+        // 'htmlmin',
         'copy:htaccess'
     ]);
 

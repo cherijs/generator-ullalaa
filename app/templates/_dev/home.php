@@ -84,6 +84,7 @@
         <!-- bower:js -->
         <script src="/../bower_components/jquery/dist/jquery.js"></script>
         <!-- endbower -->
+        <script src="/js/gumby.min.js"></script>
         <!-- endbuild -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
