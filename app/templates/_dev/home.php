@@ -64,7 +64,7 @@
 
 <div class="modal" id="warning">
     <div class="content">
-        <a class="close switch" modal-trigger="|#warning"><button title="Aizvērt" type="button" class="mfp-close">×</button></a>
+        <a class="close switch" data-trigger="|#warning"><button title="Aizvērt" type="button" class="mfp-close">×</button></a>
       
         <div class="text-center">
             <h3>Ai Ai Ai</h3>
@@ -78,6 +78,7 @@
     
     </div>
 </div>
+
 
 
         <!-- build:js /js/vendor.js -->
