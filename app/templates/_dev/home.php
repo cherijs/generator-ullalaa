@@ -62,6 +62,23 @@
         </div>
 
 
+<div class="modal" id="warning">
+    <div class="content">
+        <a class="close switch" modal-trigger="|#warning"><button title="Aizvērt" type="button" class="mfp-close">×</button></a>
+      
+        <div class="text-center">
+            <h3>Ai Ai Ai</h3>
+            <p>Lai apskatītu šo lapu, lūdzu, atjauno pārlūkprogrammas versiju uz jaunāku!</p>
+            <div class="browsers">
+                <a href="http://www.mozilla.org/en-US/firefox/new/" class="browser_ico" target="_blank" ><img src="/images/ff.png" alt=""></a>
+                <a href="https://www.google.com/intl/en/chrome/browser/" class="browser_ico" target="_blank" ><img src="/images/chrome.png" alt=""></a>
+                <a href="http://support.apple.com/downloads/#safari" target="_blank" class="browser_ico"><img src="/images/safari.png" alt=""></a>
+            </div>
+        </div>
+    
+    </div>
+</div>
+
 
         <!-- build:js /scripts/vendor.js -->
         <!-- bower:js -->

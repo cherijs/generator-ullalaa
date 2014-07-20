@@ -6,53 +6,99 @@
 @import ceaser-easing/ceaser
 
 $col: black
+$bg-color: #7e5fff
+
+@import modal
+
+*:not(input)
+  -moz-user-select: none
+  -khtml-user-select: none
+  -webkit-user-select: none
+  -ms-user-select: none
+  user-select: none
 
 html
-    font-size: 62.5%
+  font-size: 62.5%
+
+html.touch body
+  // overflow: hidden;
 
 body
-    background: #31cfff
-    font-family: $main_font
-    +font-size(1.8)
-    color: $col
+  background: $bg-color
+  font-family: $main_font
+  +font-size(1.8)
+  color: $col
+  +user-select(none)
+  &:hover
+    // background: darken(#31cfff, 10)
+
+a
+  color: #31cfff
+  text-decoration: none
+  font-weight: 300
+  &:hover
+    color: pink
 
 .hero-unit
-    margin: 50px auto 0 auto
-    width: 300px
-    font-weight: 300
-    line-height: 30px
-    background-color: #eeeeee
-    border-radius: 6px
-    padding: 60px
-    box-sizing: border-box
-    div.logo
-        width: 150px
-        height: 150px
-        +animation("ulla 0.25s ease-out 0.0s infinite alternate")
-        position: relative
-        +center-block
-        background: url("/images/logo.png") no-repeat
-        +image-2x("/images/logo2x.png", 150px, 150px)
-        //@include abs-pos(10px, 10px, 5px, 15px);
-    ul
-        li
-            list-style-type: disc
-            margin-left: 20px
-    h1
-        +font-size(6)
-        font-weight: 700
-        line-height: 1
-        letter-spacing: -1px
-        transition: all 0.5s ceaser($easeInExpo)
-        &:hover
-            color: pink
-    +respond($phone)
-        width: 100%
-        border-radius: 0px
-        margin: 0 auto 0 auto
+  margin: 50px auto 0 auto
+  width: 300px
+  font-weight: 300
+  line-height: 30px
+  background-color: #eeeeee
+  border-radius: 6px
+  padding: 60px
+  +box-sizing(border-box)
+  transition: all 0.5s ceaser($fastBack)
+  &:hover
+    // padding-bottom: 200px
+  div.logo
+    width: 150px
+    height: 150px
+    +animation("ulla 0.25s ease-out 0.0s infinite alternate")
+    position: relative
+    +center-block
+    background: url("/images/logo.png") no-repeat
+    +image-2x("/images/logo2x.png", 150px, 150px)
+    //@include abs-pos(10px, 10px, 5px, 15px);
+  ul
+    li
+      list-style-type: disc
+      margin-left: 20px
+  h1
+    +font-size(5)
+    font-weight: 700
+    line-height: 1
+    letter-spacing: -1px
+    transition: all 0.5s ceaser($fastBack)
+    //0.120, 1.650, 0.000, 1.000
+    position: relative
+    &:hover
+      color: pink
+      // margin-top: 30px
+  +respond($phone)
+    width: 100%
+    border-radius: 0px
+    margin: 0 auto 0 auto
 
 +keyframes(ulla)
-    0%
-        top: 0px
-    100%
-        top: -10px
+  0%
+    top: 0px
+  100%
+    top: -10px
+
+
+.hidden
+  visibility: hidden
+  +opacity(0)
+
+.remove
+  display: none
+
+#warning
+  .content
+    top: 50%
+    height: 170px
+    margin-top: -(170px / 2)
+    min-height: 0%
+    max-height: 100%
+    width: 360px

@@ -259,7 +259,7 @@ module.exports = function(grunt) {
                         '.htaccess',
                         '404.html',
                         'crossdomain.xml',
-                        'images/{,*/}*.webp',
+                        'images/{,*/}*.*',
                         '{,*/}*.php',
                         'fonts/{,*/}*.*',
                         'favicon/{,*/}*.*',
@@ -309,9 +309,10 @@ module.exports = function(grunt) {
             ],
             dist: [
                 'compass',
-                'copy:styles',
-                'imagemin',
-                'svgmin'
+                'copy:styles'
+                // ,
+                // 'imagemin',
+                // 'svgmin'
             ]
         }
     });

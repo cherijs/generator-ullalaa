@@ -70,6 +70,8 @@
     $easingValue: returnEaseType("easeInOutCirc")
   @else if $type ==  "easeInOutBack"
     $easingValue: returnEaseType("easeInOutBack")
-
+  @else if $type ==  "fastBack"
+    $easingValue: returnEaseType("fastBack")
+    
   @include transition($properties, $duration, cubic-bezier(unquote($easingValue)), $delay)
 
