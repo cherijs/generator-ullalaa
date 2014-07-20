@@ -39,7 +39,7 @@
         <link rel="stylesheet" href="/styles/main.css">
         <!-- endbuild -->
 
-        <!-- build:js /scripts/vendor/modernizr.js -->
+        <!-- build:js /js/vendor/modernizr.js -->
         <script src="/../bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
 
@@ -80,7 +80,7 @@
 </div>
 
 
-        <!-- build:js /scripts/vendor.js -->
+        <!-- build:js /js/vendor.js -->
         <!-- bower:js -->
         <script src="/../bower_components/jquery/dist/jquery.js"></script>
         <!-- endbower -->
@@ -97,8 +97,8 @@
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
 
-        <!-- build:js({_dev,.tmp}) /scripts/main.js -->
-        <script src="/scripts/main.js"></script>
+        <!-- build:js({_dev,.tmp}) /js/main.js -->
+        <script src="/js/main.js"></script>
         <!-- endbuild -->
 </body>
 </html>

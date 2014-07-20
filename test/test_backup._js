@@ -55,7 +55,7 @@ describe('Ullalla generator', function() {
             '_dev/favicon/mstile-70x70.png',
             '_dev/sass/_mixins.sass',
             '_dev/sass/main.sass',
-            '_dev/scripts/main.js',
+            '_dev/js/main.js',
             '_dev/styles/main.css'
         ];
 
