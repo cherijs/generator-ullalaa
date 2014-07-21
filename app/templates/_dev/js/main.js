@@ -27,7 +27,7 @@
 
     $(function() {
         // JQUERY READY, MY FUNCTIONS HERE
-        console.log('Ulalaa boilerplate ready!!!');
+        console.log('Ulla boilerplate ready!!!');
 
         if (Gumby.isOldie) {
             $('#warning').addClass('active');
