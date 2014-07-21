@@ -255,16 +255,11 @@ module.exports = function(grunt) {
                     cwd: '<%= config.dev %>',
                     dest: '<%= config.prod %>',
                     src: [
-                        '*.{ico,png,txt}',
-                        '.htaccess',
-                        '404.html',
-                        'crossdomain.xml',
-                        // 'images/{,*/}*.webp',
-                        'images/{,*/}*.*',
-                        '{,*/}*.php',
-                        'fonts/{,*/}*.*',
-                        'favicon/{,*/}*.*',
-                        'styles/fonts/{,*/}*.*'
+                        '**',
+                        '!sass',
+                        '!gumby.json',
+                        '!config.rb',
+                        '!styles'
                     ]
                 }]
             },
