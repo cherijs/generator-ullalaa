@@ -145,8 +145,8 @@ Generator.prototype.copyFiles = function copyFiles() {
     this.mkdir('_dev/fonts');
     this.mkdir('_dev/images');
 
-    this.copy('_package.json', 'package.json');
-    this.copy('_bower.json', 'bower.json');
+    this.copy('package.json', 'package.json');
+    this.copy('bower.json', 'bower.json');
     // this.copy('_config.rb', '_dev/config.rb');
     // this.copy('_Gruntfile.js', 'Gruntfile.js');
 
@@ -164,10 +164,11 @@ Generator.prototype.copyFiles = function copyFiles() {
     this.copy('prod_htaccess', '_htaccess');
 
 
-    this.copy('editorconfig', '.editorconfig');
-    this.copy('jshintrc', '.jshintrc');
+    this.copy('.editorconfig', '.editorconfig');
+    this.copy('.jshintrc', '.jshintrc');
     this.copy('gitignore', '.gitignore');
     this.copy('gitattributes', '.gitattributes');
+
 
 
 

@@ -1,3 +1,4 @@
+/* jshint undef: false, unused: false, -W020 */
 /* global Gumby,jQuery */
 (function($, window, document, undefined) {
     'use strict';
@@ -29,10 +30,9 @@
         // JQUERY READY, MY FUNCTIONS HERE
         console.log('Ulla boilerplate ready!!!');
 
-        if (Gumby.isOldie) {
+        if (!Modernizr.csstransitions || !Modernizr.cssanimations) {
             $('#warning').addClass('active');
         }
-
 
     });
 

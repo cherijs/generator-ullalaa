@@ -58,6 +58,7 @@
             <li>HTML5 Boilerplate</li>
             <li>Sass</li>
             <li>Modernizr</li>
+            <li>Gumby <a href="#" class="switch"  data-trigger="#warning">Toggles & Switches</a></li>
           </ul>
         </div>
 
@@ -67,8 +68,8 @@
         <a class="close switch" data-trigger="|#warning"><button title="Aizvērt" type="button" class="mfp-close">×</button></a>
       
         <div class="text-center">
-            <h3>Ai Ai Ai</h3>
-            <p>Lai apskatītu šo lapu, lūdzu, atjauno pārlūkprogrammas versiju uz jaunāku!</p>
+            <h3>Wow, that sucks</h3>
+            <p>You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience.</p>
             <div class="browsers">
                 <a href="http://www.mozilla.org/en-US/firefox/new/" class="browser_ico" target="_blank" ><img src="/images/ff.png" alt=""></a>
                 <a href="https://www.google.com/intl/en/chrome/browser/" class="browser_ico" target="_blank" ><img src="/images/chrome.png" alt=""></a>
@@ -83,7 +84,7 @@
 
         <!-- build:js /js/vendor.js -->
         <!-- bower:js -->
-        <script src="/../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
         <!-- endbower -->
         <script src="/js/gumby.min.js"></script>
         <!-- endbuild -->

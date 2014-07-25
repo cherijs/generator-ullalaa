@@ -3,4 +3,11 @@
 .travis.yml
 .jshintrc
 .gitattributes
+.DS_Store
 test
+app/templates/node_modules
+app/templates/bower_components
+app/templates/.sass-cache
+app/templates/.tmp
+app/templates/.DS_Store
+app/templates/_dev/.DS_Store

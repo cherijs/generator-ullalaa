@@ -62,7 +62,7 @@ module.exports = function(grunt) {
                 options: {
 
 
-                    proxy: '<%= customHost %>',
+                    proxy: 'ullalaa.dev',
                     watchTask: true // < VERY important
                 }
             }
@@ -214,7 +214,8 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= config.prod %>',
-                    src: '{,*/}*.php',
+                    src: '*.php',
+                    // src: '{,*/}*.php',
                     dest: '<%= config.prod %>'
                 }]
             }
@@ -324,7 +325,7 @@ module.exports = function(grunt) {
         'uglify',
         'copy:dist',
         'modernizr',
-        // 'rev', //change filenames 
+        // 'rev',
         'usemin',
         // 'htmlmin',
         'copy:htaccess'
