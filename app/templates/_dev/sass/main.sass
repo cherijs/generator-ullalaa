@@ -40,6 +40,16 @@ a
 .text-center
   text-align: center
 
+div.logo
+  width: 150px
+  height: 150px
+  +animation("ulla 0.25s ease-out 0.0s infinite alternate")
+  position: relative
+  +center-block
+  background: url("/images/logo.png") no-repeat
+  +image-2x("/images/logo2x.png", 150px, 150px)
+  //@include abs-pos(10px, 10px, 5px, 15px);
+
 .hero-unit
   margin: 50px auto 50px auto
   width: 400px
@@ -50,15 +60,6 @@ a
   padding: 60px
   +box-sizing(border-box)
   transition: all 0.5s ceaser($fastBack)
-  div.logo
-    width: 150px
-    height: 150px
-    +animation("ulla 0.25s ease-out 0.0s infinite alternate")
-    position: relative
-    +center-block
-    background: url("/images/logo.png") no-repeat
-    +image-2x("/images/logo2x.png", 150px, 150px)
-    //@include abs-pos(10px, 10px, 5px, 15px);
   ul
     li
       list-style-type: disc
@@ -105,6 +106,7 @@ a
 .remove
   display: none
 
+//MODAL
 #warning
   .content
     top: 50%
@@ -123,18 +125,49 @@ a
       padding-bottom: 10px
 
 //MAGIC POPUP
-
 #test-popup
+  +box-sizing(border-box)
   position: relative
   background: white
   padding: 20px
   width: auto
-  max-width: 500px
+  max-width: 380px
   margin: 20px auto
+  border-radius: 5px
+  h2
+    +font-size(2.4)
+    font-weight: 400
+    padding-bottom: 10px
+  p
+    padding-top: 10px
+    padding-bottom: 10px
+
+#well_hello
+  +box-sizing(border-box)
+  background: rgba($bg-color, 0.8)
+  position: relative
+  padding: 30px
+  width: auto
+  max-width: 280px
+  margin: 20px auto
+  border-radius: 5px
+  color: white
+  button.mfp-close
+    color: white
+  h3
+    +font-size(2.4)
+    color: white
+    font-weight: 400
+  p
+    color: white
+    padding-top: 10px
+    padding-bottom: 10px
+    a
+      color: rgba(white, 0.8)
 
 .mfp-fade.mfp-bg
   +opacity(0)
-  transition: all 0.5s ceaser($fastBack)
+  // transition: all 0.05s ceaser($easeOutExpo)
 
 .mfp-fade.mfp-bg.mfp-ready
   +opacity(0.8)
