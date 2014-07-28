@@ -30,9 +30,40 @@
         // JQUERY READY, MY FUNCTIONS HERE
         console.log('Ulla boilerplate ready!!!');
 
+        // if (Gumby.touchEvents) {
+        //     console.log(Modernizr.load());
+        //     Modernizr.load({
+        //         test: Modernizr.touch,
+        //         yep: Gumby.touchEvents + '/jquery.mobile.custom.min.js',
+        //         callback: function(url, result, key) {
+        //             if ($.mobile) {
+        //                 window.Gumby.click += ' tap';
+        //             }
+        //         }
+        //     });
+        // }
+
+
         if (!Modernizr.csstransitions || !Modernizr.cssanimations) {
             $('#warning').addClass('active');
         }
+
+        $('.open-popup-link').magnificPopup({
+            type: 'inline',
+            mainClass: 'mfp-fade',
+            removalDelay: 500,
+            callbacks: {
+                open: function() {
+                    // $(this.content).addClass('active');
+                },
+                close: function() {
+                    // $(this.content).removeClass('active');
+                }
+
+            },
+            midClick: true
+        });
+
 
     });
 

@@ -6,7 +6,7 @@
 @import ceaser-easing/ceaser
 
 $col: black
-$bg-color: #6a0038
+$bg-color: #2c0054
 
 @import modal
 
@@ -72,7 +72,6 @@ a
       float: left
       &:first-child
         margin-left: 0px
-      &:last-child
   .col
     +column-count(2)
     // +column-rule(1px, solid, lighten(black, 80))
@@ -122,3 +121,49 @@ a
     p
       padding-top: 10px
       padding-bottom: 10px
+
+//MAGIC POPUP
+
+#test-popup
+  position: relative
+  background: white
+  padding: 20px
+  width: auto
+  max-width: 500px
+  margin: 20px auto
+
+.mfp-fade.mfp-bg
+  +opacity(0)
+  transition: all 0.5s ceaser($fastBack)
+
+.mfp-fade.mfp-bg.mfp-ready
+  +opacity(0.8)
+
+.mfp-fade.mfp-bg.mfp-removing
+  transition: all 0.1s ease-in
+  +opacity(0)
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content
+  transition: all 0.1s ease-in
+
+.mfp-fade.mfp-wrap .mfp-content
+  +opacity(0)
+  -webkit-transform: scale(0.7)
+  -moz-transform: scale(0.7)
+  -ms-transform: scale(0.7)
+  transform: scale(0.7)
+  transition: all 0.5s ceaser($fastBack)
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content
+  +opacity(1)
+  -webkit-transform: scale(1)
+  -moz-transform: scale(1)
+  -ms-transform: scale(1)
+  transform: scale(1)
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content
+  +opacity(0)
+  -webkit-transform: scale(0.7)
+  -moz-transform: scale(0.7)
+  -ms-transform: scale(0.7)
+  transform: scale(0.7)

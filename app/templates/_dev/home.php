@@ -32,6 +32,7 @@
 
         <!-- build:css /styles/vendor.css -->
         <!-- bower:css -->
+        <link rel="stylesheet" href="../bower_components/magnific-popup/dist/magnific-popup.css" />
         <!-- endbower -->
         <!-- endbuild -->
 
@@ -59,13 +60,27 @@
             <li>Sass</li>
             <li>Modernizr</li>
             <li>Gumby <a href="#" class="switch"  data-trigger="#warning">Toggles & Switches</a></li>
+            <li><a href="#test-popup" class="open-popup-link">Magic popup inline</a> | <a href="http://vimeo.com/123123" class="mfp-iframe open-popup-link">Vimeo</a></li>
           </ul>
         </div>
+
+<div id="test-popup" class="mfp-hide">
+     <div class="content">
+
+        <div class="text-center">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus mollitia quae, architecto maiores, animi a ad aliquam blanditiis tempora quia officia iure autem consectetur esse eligendi voluptatum reprehenderit dolore odio.</p>
+        </div>
+
+    </div>
+</div>
+
+
+
 
 
 <div class="modal" id="warning">
     <div class="content">
-        <a class="close switch" data-trigger="|#warning"><button title="Aizvērt" type="button" class="mfp-close">×</button></a>
+        <a class="close switch" data-trigger="|#warning"><button title="Close" type="button" class="mfp-close">×</button></a>
       
         <div class="text-center">
             <h3>Wow, that sucks</h3>
@@ -85,6 +100,7 @@
         <!-- build:js /js/vendor.js -->
         <!-- bower:js -->
         <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
         <!-- endbower -->
         <script src="/js/gumby.min.js"></script>
         <!-- endbuild -->

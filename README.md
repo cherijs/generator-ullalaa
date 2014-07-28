@@ -3,7 +3,28 @@
 > [Yeoman](http://yeoman.io) generator
 
 
-## Getting Started
+## Ullalaa is frontend web template that includes
+- PHP HTML5 boilerplate
+- .htaccess
+- Sass
+- Modernizr
+- jQuery
+- Gumby Toggles & Switches
+- Magic popup
+ 
+---
+## Modules
+- Grunt
+- Bower
+- Compass
+- browser-sync
+- autoprefixer
+- clean
+- cssmin
+- uglify
+
+
+# Getting Started
 
 
 ```bash

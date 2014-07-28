@@ -1,6 +1,6 @@
 {
     "name": "generator-ullalaa",
-    "version": "0.0.19",
+    "version": "1.0.0",
     "description": "Scaffold out a front-end web",
     "license": "MIT",
     "main": "app/index.js",
@@ -33,7 +33,15 @@
         "template",
         "sass",
         "modernizr",
+        "Grunt",
+        "Bower",
+        "Compass",
+        "browser-sync",
+        "autoprefixer",
+        "clean",
+        "cssmin",
         "jquery",
+        "uglify",
         "grunt"
     ],
     "dependencies": {
