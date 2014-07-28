@@ -2,6 +2,7 @@ node_modules/
 temp/
 app/templates/bower_components/
 app/templates/node_modules/
+app/templates/.sass-cache/
 app/templates/_dev/.sass-cache/
 app/templates/_dev/.tmp/
 app/templates/_dev/.DS_Store
