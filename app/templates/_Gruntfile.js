@@ -295,6 +295,12 @@ module.exports = function(grunt) {
                         '!<%= config.prod %>/js/libs/*'
                     ]
                 },
+                'extra': {
+                    'shiv': true,
+                    'svg': true,
+                    'touch': true,
+                    'load': true
+                },
                 uglify: true
             }
         },

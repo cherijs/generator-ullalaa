@@ -30,20 +30,6 @@
         // JQUERY READY, MY FUNCTIONS HERE
         console.log('Ulla boilerplate ready!!!');
 
-        // if (Gumby.touchEvents) {
-        //     console.log(Modernizr.load());
-        //     Modernizr.load({
-        //         test: Modernizr.touch,
-        //         yep: Gumby.touchEvents + '/jquery.mobile.custom.min.js',
-        //         callback: function(url, result, key) {
-        //             if ($.mobile) {
-        //                 window.Gumby.click += ' tap';
-        //             }
-        //         }
-        //     });
-        // }
-
-
         if (!Modernizr.csstransitions || !Modernizr.cssanimations) {
             $('#warning').addClass('active');
         }

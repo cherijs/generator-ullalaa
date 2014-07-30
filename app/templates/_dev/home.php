@@ -41,7 +41,7 @@
         <!-- endbuild -->
 
         <!-- build:js /js/libs/modernizr.js -->
-        <script src="/../bower_components/modernizr/modernizr.js"></script>
+        <script src="/js/libs/modernizr.custom.85481.js"></script>
         <!-- endbuild -->
 
     </head>
@@ -114,7 +114,10 @@
         <script src="../bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
         <!-- endbower -->
         <!-- put all your js files here  -->
-        <script src="/js/gumby.min.js"></script>
+       <script src="../bower_components/gumby/js/libs/gumby.js"></script>
+       <script src="../bower_components/gumby/js/libs/ui/gumby.toggleswitch.js"></script>
+       <script src="../bower_components/gumby/js/libs/ui/jquery.validation.js"></script>
+       <script src="../bower_components/gumby/js/libs/gumby.init.js"></script>
         <!-- endbuild -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
