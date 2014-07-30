@@ -52,28 +52,39 @@
 
 
         <div class="hero-unit">
-          <div class="logo"></div>
+          <div class="logo">
+              <img src="/images/wolf.svg" width="150" height="150" onerror="this.onerror=null; this.src='/images/wolf.png'">
+          </div>
           <h1>Ullalaa</h1>
+          <h2>#wolfpower</h2>
           <p>You now have</p>
           <ul>
             <li>HTML5 Boilerplate</li>
             <li>Sass</li>
             <li>Modernizr</li>
             <li>Gumby <a href="#" class="switch"  data-trigger="#warning">Toggles & Switches</a></li>
-            <li><a href="#test-popup" class="open-popup-link">Magic popup inline</a> | <a href="http://vimeo.com/123123" class="mfp-iframe open-popup-link">Vimeo</a></li>
+            <li>Magic popup <a href="#well_hello" class="open-popup-link">inline</a> | <a href="http://vimeo.com/7410486" class="mfp-iframe open-popup-link">Vimeo</a></li>
           </ul>
         </div>
 
-<div id="test-popup" class="mfp-hide">
-     <div class="content">
-
-        <div class="text-center">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus mollitia quae, architecto maiores, animi a ad aliquam blanditiis tempora quia officia iure autem consectetur esse eligendi voluptatum reprehenderit dolore odio.</p>
+        <div id="test-popup" class="mfp-hide">
+             <div class="content">
+                <div class="text-center">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus mollitia quae, architecto maiores, animi a ad aliquam blanditiis tempora quia officia iure autem consectetur esse eligendi voluptatum reprehenderit dolore odio.</p>
+                </div>
+            </div>
         </div>
 
-    </div>
-</div>
-
+        <div id="well_hello" class="mfp-hide">
+            <div class="content">
+                <a class="close"><button title="Close" type="button" class="mfp-close">×</button></a>
+                <div class="text-center">
+                    <h3>Well hello</h3>
+                    <p><a class="open-popup-warning" href="#test-popup">Open another popup</a></p>
+                </div>
+            </div>
+        </div>
 
 
 

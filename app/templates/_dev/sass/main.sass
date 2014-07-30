@@ -6,7 +6,7 @@
 @import ceaser-easing/ceaser
 
 $col: black
-$bg-color: #2c0054
+$bg-color: #4890a2
 
 @import modal
 
@@ -56,8 +56,8 @@ a
     +animation("ulla 0.25s ease-out 0.0s infinite alternate")
     position: relative
     +center-block
-    background: url("/images/logo.png") no-repeat
-    +image-2x("/images/logo2x.png", 150px, 150px)
+    // background: url("/images/logo.png") no-repeat
+    // +image-2x("/images/logo2x.png", 150px, 150px)
     //@include abs-pos(10px, 10px, 5px, 15px);
   ul
     li
@@ -81,11 +81,14 @@ a
     font-weight: 700
     line-height: 1
     letter-spacing: -1px
-    transition: all 0.5s ceaser($fastBack)
+    transition: all 0.5s ceaser("0.120, 1.650, 0.000, 1.000")
     //0.120, 1.650, 0.000, 1.000
     position: relative
-    &:hover
-      color: darken($bg-color, 10)
+  h2
+    +font-size(2)
+    font-weight: 600
+    letter-spacing: -1px
+    color: #28969b
   +respond($phone)
     width: 100%
     border-radius: 0px
@@ -123,14 +126,45 @@ a
       padding-bottom: 10px
 
 //MAGIC POPUP
-
 #test-popup
+  +box-sizing(border-box)
   position: relative
   background: white
   padding: 20px
   width: auto
-  max-width: 500px
+  max-width: 380px
   margin: 20px auto
+  border-radius: 5px
+  h2
+    +font-size(2.4)
+    font-weight: 400
+    padding-bottom: 10px
+  p
+    padding-top: 10px
+    padding-bottom: 10px
+
+#well_hello
+  +box-sizing(border-box)
+  background: rgba($bg-color, 0.8)
+  position: relative
+  padding: 30px
+  width: auto
+  max-width: 280px
+  margin: 20px auto
+  border-radius: 5px
+  color: white
+  button.mfp-close
+    color: white
+  h3
+    +font-size(2.4)
+    color: white
+    font-weight: 400
+  p
+    color: white
+    padding-top: 10px
+    padding-bottom: 10px
+    a
+      color: rgba(white, 0.8)
 
 .mfp-fade.mfp-bg
   +opacity(0)

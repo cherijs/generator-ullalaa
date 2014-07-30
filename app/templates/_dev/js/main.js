@@ -59,10 +59,11 @@
                 close: function() {
                     // $(this.content).removeClass('active');
                 }
-
             },
             midClick: true
         });
+        $('.open-popup-warning').magnificPopup();
+        // $('.open-popup-warning').magnificPopup('open');
 
 
     });

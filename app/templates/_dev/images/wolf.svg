@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+]>
+<svg version="1.1" id="wolf" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="600px" height="600px" viewBox="0 0 600 600" enable-background="new 0 0 600 600" xml:space="preserve">
+<polygon id="skin" fill="#18969b" points="544,0 450.291,146.997 150.933,147.042 58,0 23.95,273.7 295.181,489.398 577.638,273.7 
+	"/>
+<polygon id="shad" opacity="0.2" enable-background="new    " points="150.933,147.042 23.95,273.7 295.181,489.398 577.638,273.7 
+	450.301,146.997 "/>
+<path id="l_x5F_cheack" fill="#C9C9C9" d="M23.95,273.7L9.179,480.032l289.357,76.163C300.135,434.426,97.552,313.363,23.95,273.7z"
+	/>
+<path id="r_x5F_cheack" fill="#C9C9C9" d="M301.464,556.195l289.357-76.157l-13.184-206.337
+	C504.034,313.365,299.87,434.426,301.464,556.195z"/>
+<path id="deguns_1_" fill="#76808C" d="M293.593,308.33c-33.942,0-61.455,105.08-61.455,180.566s30.022,68.964,63.964,68.964
+	c33.94,0,58.949,6.522,58.949-68.964S327.535,308.33,293.593,308.33z"/>
+<path id="r_x5F_eye" d="M479.749,404.919c-7.902-1.527-29.503,11.043-40.026,17.747c-8.457,5.376-20.769,16.821-12.743,22.327
+	C455.378,464.458,488.216,406.558,479.749,404.919z"/>
+<path id="l_x5F_eye" d="M143.11,417.916c-10.523-6.705-32.125-19.275-40.026-17.748c-8.467,1.639,24.371,59.543,52.769,40.072
+	C163.879,434.736,151.567,423.294,143.11,417.916z"/>
+<path id="deguns" d="M323.216,489.141l-56.009,0.489c-22.874,0.198-32.109,11.336-20.522,24.753l28.375,32.843
+	c11.585,13.415,30.3,13.252,41.585-0.361l27.637-33.334C355.57,499.916,346.087,488.939,323.216,489.141z"/>
+</svg>

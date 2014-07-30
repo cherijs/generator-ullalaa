@@ -12,7 +12,7 @@
 - Gumby Toggles & Switches
 - Magic popup
  
----
+
 ## Modules
 - Grunt
 - Bower
