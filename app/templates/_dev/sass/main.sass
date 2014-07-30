@@ -84,11 +84,21 @@ a
     transition: all 0.5s ceaser("0.120, 1.650, 0.000, 1.000")
     //0.120, 1.650, 0.000, 1.000
     position: relative
+    span
+      +font-size(1.2)
+      display: inline-block
+      color: white
+      letter-spacing: 0
+      +border-radius(3px)
+      padding-right: 2px
+      padding-left: 2px
+      background-color: #d43848
   h2
     +font-size(2)
     font-weight: 600
     letter-spacing: -1px
     color: #28969b
+    padding-bottom: 20px
   +respond($phone)
     width: 100%
     border-radius: 0px

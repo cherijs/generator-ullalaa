@@ -92,7 +92,7 @@ module.exports = function(grunt) {
             all: [
                 'Gruntfile.js',
                 // '<%= config.dev %>/js/{,*/}*.js',
-                '!<%= config.dev %>/js/vendor/*'
+                '!<%= config.dev %>/js/libs/*'
 
             ]
         },
@@ -118,7 +118,7 @@ module.exports = function(grunt) {
         // Add vendor prefixed styles
         autoprefixer: {
             options: {
-                browsers: ['last 3 version']
+                browsers: ['last 2 version']
             },
             dist: {
                 // autoprefix tmp css
@@ -250,19 +250,21 @@ module.exports = function(grunt) {
         // Copies remaining files to places other tasks can use
         copy: {
             dist: {
-                files: [{
-                    expand: true,
-                    dot: true,
-                    cwd: '<%= config.dev %>',
-                    dest: '<%= config.prod %>',
-                    src: [
-                        '**',
-                        '!sass',
-                        '!gumby.json',
-                        '!config.rb',
-                        '!styles'
-                    ]
-                }]
+                // files: [{
+                expand: true,
+                dot: true,
+                cwd: '<%= config.dev %>',
+                dest: '<%= config.prod %>',
+                src: [
+                    '**/*',
+                    '**/js/libs',
+                    '!**/js/*',
+                    '!**/sass/**',
+                    '!gumby.json',
+                    '!config.rb',
+                    '!styles'
+                ]
+                // }]
             },
             styles: {
                 //copy css to .tmp
@@ -286,12 +288,12 @@ module.exports = function(grunt) {
         modernizr: {
             dist: {
                 devFile: 'bower_components/modernizr/modernizr.js',
-                outputFile: '<%= config.prod %>/js/vendor/modernizr.js',
+                outputFile: '<%= config.prod %>/js/libs/modernizr.js',
                 files: {
                     src: [
                         '<%= config.prod %>/js/{,*/}*.js',
                         '<%= config.prod %>/styles/{,*/}*.css',
-                        '!<%= config.prod %>/js/vendor/*'
+                        '!<%= config.prod %>/js/libs/*'
                     ]
                 },
                 uglify: true

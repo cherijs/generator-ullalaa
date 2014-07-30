@@ -10,3 +10,4 @@ app/templates/node_modules/
 app/templates/bower_components/
 app/templates/_dev/.sass-cache/
 app/templates/.sass-cache/
+app/templates/_prod/

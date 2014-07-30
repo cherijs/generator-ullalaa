@@ -40,7 +40,7 @@
         <link rel="stylesheet" href="/styles/main.css">
         <!-- endbuild -->
 
-        <!-- build:js /js/vendor/modernizr.js -->
+        <!-- build:js /js/libs/modernizr.js -->
         <script src="/../bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
 
@@ -55,7 +55,7 @@
           <div class="logo">
               <img src="/images/wolf.svg" width="150" height="150" onerror="this.onerror=null; this.src='/images/wolf.png'">
           </div>
-          <h1>Ullalaa</h1>
+          <h1>Ullalaa <span>v1.0.2</span></h1>
           <h2>#wolfpower</h2>
           <p>You now have</p>
           <ul>
@@ -108,11 +108,12 @@
 
 
 
-        <!-- build:js /js/vendor.js -->
+        <!-- build:js /js/libs/vendor.js -->
         <!-- bower:js -->
         <script src="../bower_components/jquery/dist/jquery.js"></script>
         <script src="../bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
         <!-- endbower -->
+        <!-- put all your js files here  -->
         <script src="/js/gumby.min.js"></script>
         <!-- endbuild -->
 
