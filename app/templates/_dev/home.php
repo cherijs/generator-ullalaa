@@ -62,6 +62,7 @@
             <li>HTML5 Boilerplate</li>
               <li>Sass</li>
               <li>Modernizr</li>
+              <li>jQuery</li>
               <li>Gumby <!-- <a href="#" class="switch"  data-trigger="#warning"> -->Toggles & Switches<!-- </a> --></li>
             </ul>
 
