@@ -30,7 +30,7 @@
         // JQUERY READY, MY FUNCTIONS HERE
         console.log('Ulla boilerplate ready!!!');
 
-        if (!Modernizr.csstransitions || !Modernizr.cssanimations) {
+        if (!Modernizr.csstransitions || !Modernizr.cssanimations || !Modernizr.svg) {
             $('#warning').addClass('active');
         }
 

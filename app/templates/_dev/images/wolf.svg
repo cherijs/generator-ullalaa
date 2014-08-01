@@ -9,7 +9,7 @@
 <svg version="1.1" id="wolf" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
 	 x="0px" y="0px" width="600px" height="600px" viewBox="0 0 600 600" enable-background="new 0 0 600 600" xml:space="preserve">
-<polygon id="skin" fill="#18969b" points="544,0 450.291,146.997 150.933,147.042 58,0 23.95,273.7 295.181,489.398 577.638,273.7 
+<polygon id="skin" fill="#464040" points="544,0 450.291,146.997 150.933,147.042 58,0 23.95,273.7 295.181,489.398 577.638,273.7 
 	"/>
 <polygon id="shad" opacity="0.2" enable-background="new    " points="150.933,147.042 23.95,273.7 295.181,489.398 577.638,273.7 
 	450.301,146.997 "/>

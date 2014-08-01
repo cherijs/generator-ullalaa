@@ -52,19 +52,40 @@
 
 
         <div class="hero-unit">
-          <div class="logo">
+            <div class="logo">
               <img src="/images/wolf.svg" width="150" height="150" onerror="this.onerror=null; this.src='/images/wolf.png'">
-          </div>
-          <h1>Ullalaa <span>v1.0.3</span></h1>
-          <h2>#wolfpower</h2>
-          <p>You now have</p>
-          <ul>
+            </div>
+            <h1>Ullalaa <span>v1.0.3</span></h1>
+            <h2>#wolfpower</h2>
+            <p>You now have</p>
+            <ul>
             <li>HTML5 Boilerplate</li>
-            <li>Sass</li>
-            <li>Modernizr</li>
-            <li>Gumby <a href="#" class="switch"  data-trigger="#warning">Toggles & Switches</a></li>
-            <li>Magic popup <a href="#well_hello" class="open-popup-link">inline</a> | <a href="http://vimeo.com/7410486" class="mfp-iframe open-popup-link">Vimeo</a></li>
-          </ul>
+              <li>Sass</li>
+              <li>Modernizr</li>
+              <li>Gumby <!-- <a href="#" class="switch"  data-trigger="#warning"> -->Toggles & Switches<!-- </a> --></li>
+            </ul>
+
+            <div class="drawer">
+              <section class="shelf"  id="d1">
+                  <a href="#"  class="toggle" data-trigger="#d1 > .content">Lorem ipsum <img src="/images/togle_ico.svg" alt="" ></a>
+                  <article class="content">
+                      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="switch"  data-trigger="#warning">Warning alert</a> Aliquam, perspiciatis adipisci, voluptatem labore asperiores obcaecati suscipit commodi ipsum iure porro, maiores non saepe distinctio velit dolor facilis dolore corporis aliquid.</div>
+                  </article>
+              </section>
+
+              <section class="shelf"  id="d2">
+                  <a href="#"  class="toggle" data-trigger="#d2 > .content">Dolar sit<img src="/images/togle_ico.svg" alt=""></a>
+                  <article class="content">
+                  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, perspiciatis adipisci, voluptatem labore asperiores obcaecati suscipit commodi ipsum iure porro, maiores non saepe distinctio velit dolor facilis dolore corporis aliquid.</div>
+                  </article>
+              </section>
+            </div>
+
+            <ul>
+              <li>Magic popup <a href="#well_hello" class="open-popup-link">inline</a> | <a href="http://vimeo.com/7410486" class="mfp-iframe open-popup-link">Vimeo</a></li>
+            </ul>
+
+
         </div>
 
         <div id="test-popup" class="mfp-hide">
@@ -86,25 +107,21 @@
             </div>
         </div>
 
-
-
-
-<div class="modal" id="warning">
-    <div class="content">
-        <a class="close switch" data-trigger="|#warning"><button title="Close" type="button" class="mfp-close">×</button></a>
-      
-        <div class="text-center">
-            <h3>Wow, that sucks</h3>
-            <p>You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience.</p>
-            <div class="browsers">
-                <a href="http://www.mozilla.org/en-US/firefox/new/" class="browser_ico" target="_blank" ><img src="/images/ff.png" alt=""></a>
-                <a href="https://www.google.com/intl/en/chrome/browser/" class="browser_ico" target="_blank" ><img src="/images/chrome.png" alt=""></a>
-                <a href="http://support.apple.com/downloads/#safari" target="_blank" class="browser_ico"><img src="/images/safari.png" alt=""></a>
+        <div class="modal" id="warning">
+            <div class="content">
+                <a class="close switch" data-trigger="|#warning"><button title="Close" type="button" class="mfp-close">×</button></a>
+                <div class="text-center">
+                    <h3>Wow, that sucks</h3>
+                    <p>You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience.</p>
+                    <div class="browsers">
+                        <a href="http://www.mozilla.org/en-US/firefox/new/" class="browser_ico" target="_blank" ><img src="/images/ff.png" alt=""></a>
+                        <a href="https://www.google.com/intl/en/chrome/browser/" class="browser_ico" target="_blank" ><img src="/images/chrome.png" alt=""></a>
+                        <a href="http://support.apple.com/downloads/#safari" target="_blank" class="browser_ico"><img src="/images/safari.png" alt=""></a>
+                    </div>
+                </div>
+            
             </div>
         </div>
-    
-    </div>
-</div>
 
 
 
