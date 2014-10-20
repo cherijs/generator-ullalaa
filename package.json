@@ -1,6 +1,6 @@
 {
     "name": "generator-ullalaa",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Front-end web html5 boilerplate php template",
     "license": "MIT",
     "main": "app/index.js",

@@ -55,7 +55,7 @@
             <div class="logo">
               <img src="/images/wolf.svg" width="150" height="150" onerror="this.onerror=null; this.src='/images/wolf.png'">
             </div>
-            <h1>Ullalaa <span>v1.0.4</span></h1>
+            <h1>Ullalaa <span>v1.0.5</span></h1>
             <h2>#wolfpower</h2>
             <p>You now have</p>
             <ul>
