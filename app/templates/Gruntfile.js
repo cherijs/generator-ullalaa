@@ -6,7 +6,7 @@
 // use this if you want to recursively match all subfolders:
 // 'test/spec/**/*.js'
 
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
     // Load grunt tasks automatically
     require('load-grunt-tasks')(grunt);
@@ -45,7 +45,7 @@ module.exports = function(grunt) {
                 files: ['Gruntfile.js']
             },
             compass: {
-                files: ['<%= config.dev %>/sass/{,*/}*.{scss,sass}'],
+                files: ['<%= config.dev %>/scss/{,*/}*.{scss,sass}'],
                 tasks: ['compass']
             },
             styles: {
@@ -103,7 +103,7 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     config: '<%= config.dev %>/config.rb',
-                    sassDir: '<%= config.dev %>/sass',
+                    sassDir: '<%= config.dev %>/scss',
                     cssDir: '<%= config.dev %>/styles',
                     javascriptsDir: '<%= config.dev %>/js',
                     imagesDir: '<%= config.dev %>/images',
@@ -259,7 +259,7 @@ module.exports = function(grunt) {
                     '**/*',
                     '**/js/libs',
                     '!**/js/*',
-                    '!**/sass/**',
+                    '!**/scss/**',
                     '!gumby.json',
                     '!config.rb',
                     '!styles'
