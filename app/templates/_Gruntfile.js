@@ -6,7 +6,7 @@
 // use this if you want to recursively match all subfolders:
 // 'test/spec/**/*.js'
 
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
     // Load grunt tasks automatically
     require('load-grunt-tasks')(grunt);
@@ -34,7 +34,7 @@ module.exports = function(grunt) {
                 tasks: ['bowerInstall']
             },
             js: {
-                files: ['<%= config.dev %>/js/{,*/}*.js'],
+                files: ['<%= config.dev %>/assets/js/{,*/}*.js'],
                 // tasks: ['jshint'],
                 options: {
                     // livereload: true
@@ -45,11 +45,11 @@ module.exports = function(grunt) {
                 files: ['Gruntfile.js']
             },
             compass: {
-                files: ['<%= config.dev %>/scss/{,*/}*.{scss,sass}'],
+                files: ['<%= config.dev %>/assets/scss/{,*/}*.{scss,sass}'],
                 tasks: ['compass']
             },
             styles: {
-                files: ['<%= config.dev %>/styles/{,*/}*.css'],
+                files: ['<%= config.dev %>/assets/styles/{,*/}*.css'],
                 tasks: ['newer:copy:styles', 'autoprefixer']
             }
         },
@@ -57,7 +57,7 @@ module.exports = function(grunt) {
         browserSync: {
             dev: {
                 bsFiles: {
-                    src: ['<%= config.dev %>/styles/{,*/}*.css', '<%= config.dev %>/js/{,*/}*.js', '<%= config.dev %>/{,*/}*.php', '<%= config.dev %>/{,*/}*.php']
+                    src: ['<%= config.dev %>/assets/styles/{,*/}*.css', '<%= config.dev %>/assets/js/{,*/}*.js', '<%= config.dev %>/{,*/}*.php', '<%= config.dev %>/{,*/}*.html']
                 },
                 options: {
 
@@ -92,7 +92,7 @@ module.exports = function(grunt) {
             all: [
                 'Gruntfile.js',
                 // '<%= config.dev %>/js/{,*/}*.js',
-                '!<%= config.dev %>/js/libs/*'
+                '!<%= config.dev %>/assets/js/libs/*'
 
             ]
         },
@@ -103,11 +103,11 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     config: '<%= config.dev %>/config.rb',
-                    sassDir: '<%= config.dev %>/scss',
-                    cssDir: '<%= config.dev %>/styles',
-                    javascriptsDir: '<%= config.dev %>/js',
-                    imagesDir: '<%= config.dev %>/images',
-                    fontsDir: '<%= config.dev %>/fonts',
+                    sassDir: '<%= config.dev %>/assets/scss',
+                    cssDir: '<%= config.dev %>/assets/styles',
+                    javascriptsDir: '<%= config.dev %>/assets/js',
+                    imagesDir: '<%= config.dev %>/assets/images',
+                    fontsDir: '<%= config.dev %>/assets/fonts',
                     outputStyle: 'compressed',
                     noLineComments: true
 
@@ -138,7 +138,7 @@ module.exports = function(grunt) {
                 exclude: ['bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap.js', 'bower_components/modernizr/modernizr.js']
             },
             compass: {
-                src: ['<%= config.dev %>/styles/{,*/}*.{scss,sass}']
+                src: ['<%= config.dev %>/assets/styles/{,*/}*.{scss,sass}']
             }
         },
 
@@ -147,11 +147,11 @@ module.exports = function(grunt) {
             dist: {
                 files: {
                     src: [
-                        '<%= config.prod %>/js/{,*/}*.js',
-                        '<%= config.prod %>/styles/{,*/}*.css',
-                        '<%= config.prod %>/images/{,*/}*.*',
-                        '<%= config.prod %>/styles/fonts/{,*/}*.*',
-                        '<%= config.prod %>/*.{ico,png}'
+                        '<%= config.prod %>/assets/js/{,*/}*.js',
+                        '<%= config.prod %>/assets/styles/{,*/}*.css',
+                        '<%= config.prod %>/assets/images/{,*/}*.*',
+                        '<%= config.prod %>/assets/fonts/{,*/}*.*',
+                        '<%= config.prod %>/assets/favicon/*.{ico,png}'
                     ]
                 }
             }
@@ -164,16 +164,16 @@ module.exports = function(grunt) {
             options: {
                 dest: '<%= config.prod %>'
             },
-            html: '<%= config.dev %>/{,*/}*.php'
+            html: '<%= config.dev %>/{,*/}*.html'
         },
 
         // Performs rewrites based on rev and the useminPrepare configuration
         usemin: {
             options: {
-                assetsDirs: ['<%= config.prod %>', '<%= config.prod %>/images']
+                assetsDirs: ['<%= config.prod %>', '<%= config.prod %>/assets/images']
             },
-            html: ['<%= config.prod %>/{,*/}*.php'],
-            css: ['<%= config.prod %>/styles/{,*/}*.css']
+            html: ['<%= config.prod %>/{,*/}*.html'],
+            css: ['<%= config.prod %>/assets/styles/{,*/}*.css']
         },
 
         // The following *-min tasks produce minified files in the dist folder
@@ -181,9 +181,9 @@ module.exports = function(grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: '<%= config.dev %>/images',
+                    cwd: '<%= config.dev %>/assets/images',
                     src: '{,*/}*.{gif,jpeg,jpg,png}',
-                    dest: '<%= config.prod %>/images'
+                    dest: '<%= config.prod %>/assets/images'
                 }]
             }
         },
@@ -192,9 +192,9 @@ module.exports = function(grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: '<%= config.dev %>/images',
+                    cwd: '<%= config.dev %>/assets/images',
                     src: '{,*/}*.svg',
-                    dest: '<%= config.prod %>/images'
+                    dest: '<%= config.prod %>/assets/images'
                 }]
             }
         },
@@ -214,7 +214,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= config.prod %>',
-                    src: '{,*/}*.php',
+                    src: '{,*/}*.html',
                     dest: '<%= config.prod %>'
                 }]
             }
@@ -256,9 +256,9 @@ module.exports = function(grunt) {
                     dest: '<%= config.prod %>',
                     src: [
                         '**/*',
-                        '**/js/libs',
-                        '!**/js/*',
-                        '!**/scss/**',
+                        '**/assets/js/libs',
+                        '!**/assets/js/*',
+                        '!**/assets/scss/**',
                         '!gumby.json',
                         '!config.rb',
                         '!styles'
@@ -269,7 +269,7 @@ module.exports = function(grunt) {
                 //copy css to .tmp
                 expand: true,
                 dot: true,
-                cwd: '<%= config.dev %>/styles',
+                cwd: '<%= config.dev %>/assets/styles',
                 dest: '.tmp/styles/',
                 src: '{,*/}*.css'
             },
@@ -287,12 +287,12 @@ module.exports = function(grunt) {
         modernizr: {
             dist: {
                 devFile: 'bower_components/modernizr/modernizr.js',
-                outputFile: '<%= config.prod %>/js/libs/modernizr.js',
+                outputFile: '<%= config.prod %>/assets/js/libs/modernizr.js',
                 files: {
                     src: [
-                        '<%= config.prod %>/js/{,*/}*.js',
-                        '<%= config.prod %>/styles/{,*/}*.css',
-                        '!<%= config.prod %>/js/libs/*'
+                        '<%= config.prod %>/assets/js/{,*/}*.js',
+                        '<%= config.prod %>/assets/styles/{,*/}*.css',
+                        '!<%= config.prod %>/assets/js/libs/*'
                     ]
                 },
                 'extra': {

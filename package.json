@@ -1,12 +1,12 @@
 {
-    "name": "generator-ullalaa",
+    "name": "generator-blanky",
     "version": "1.0.5",
-    "description": "Front-end web html5 boilerplate php template",
+    "description": "Front-end web html5 boilerplate template",
     "license": "MIT",
     "main": "app/index.js",
     "repository": {
         "type": "git",
-        "url": "https://github.com/cherijs/generator-ullalaa.git"
+        "url": "https://github.com/cherijs/generator-blanky.git"
     },
     "author": {
         "name": "Arturs Cirsis",
@@ -16,9 +16,6 @@
     "engines": {
         "node": ">=0.10.0",
         "npm": ">=1.2.10"
-    },
-    "scripts": {
-        "test": "mocha"
     },
     "files": [
         "app"

@@ -5,7 +5,6 @@
 .DS_Store
 .tmp
 .sass-cache
-test
 app/templates/node_modules/
 app/templates/bower_components/
 app/templates/_dev/.sass-cache/
