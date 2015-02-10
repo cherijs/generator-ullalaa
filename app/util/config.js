@@ -7,9 +7,9 @@ var fs = require('fs'),
     path = require('path');
 
 // Constructor
-var Config = module.exports = function (locals, globals) {
+var Config = module.exports = function(locals, globals) {
     // Default config file name
-    this.filename = '.blanky';
+    this.filename = '.ullalaa';
 
     // Load files
     this.global = this.load(path.join(process.env.HOME || process.env.USERPROFILE, this.filename)) || {};
@@ -21,7 +21,7 @@ var Config = module.exports = function (locals, globals) {
 };
 
 // Set local config values
-Config.prototype.set = function (key, val) {
+Config.prototype.set = function(key, val) {
     if (typeof val !== 'undefined') {
         // Set a single key
         this.local[key] = val;
@@ -32,7 +32,7 @@ Config.prototype.set = function (key, val) {
 };
 
 // Set global config values
-Config.prototype.setGlobal = function (key, val) {
+Config.prototype.setGlobal = function(key, val) {
     if (typeof val !== 'undefined') {
         // Set a single key
         this.global[key] = val;
@@ -43,7 +43,7 @@ Config.prototype.setGlobal = function (key, val) {
 };
 
 // Get config values, locals first
-Config.prototype.get = function (key) {
+Config.prototype.get = function(key) {
     // Get a single key
     if (key) {
         if (typeof this.local[key] !== 'undefined') {
@@ -63,14 +63,14 @@ Config.prototype.get = function (key) {
 };
 
 // Write the config to file
-Config.prototype.write = function (filepath, data) {
+Config.prototype.write = function(filepath, data) {
     filepath = filepath || this.filename;
     data = data || this.get();
     fs.writeFileSync(filepath, JSON.stringify(data, null, '\t'));
 };
 
 // Load a config file
-Config.prototype.load = function (filepath) {
+Config.prototype.load = function(filepath) {
     filepath = filepath || this.filename;
     if (fs.existsSync(filepath)) {
         var content = fs.readFileSync(filepath, {

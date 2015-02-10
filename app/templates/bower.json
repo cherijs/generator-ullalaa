@@ -1,11 +1,12 @@
 {
-    "name": "yo-Blanky",
-    "private": true,
-    "dependencies": {
-        "modernizr": "~2.8.3",
-        "jquery": "~1.11.0"
-    },
-    "devDependencies": {
-
-    }
+  "name": "yo-Ullalaa",
+  "private": true,
+  "dependencies": {
+    "modernizr": "~2.8.3",
+    "jquery": "~1.11.0",
+    "magnific-popup": "~0.9.9"
+  },
+  "devDependencies": {
+    "gumby": "~2.6.3"
+  }
 }

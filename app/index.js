@@ -35,7 +35,7 @@ var Generator = module.exports = function Generator(args, options) {
     this.env.options['app-suffix'] = this.options['app-suffix'];
 
 
-    this.on('end', function () {
+    this.on('end', function() {
         // var enabledComponents = [];
 
         // if (this.animateModule) {
@@ -129,7 +129,7 @@ Generator.prototype.askForCompass = function askForCompass() {
         name: 'customHost',
         message: 'What will be your virtual Host name (MAMP)? ex: "localhost" ',
         default: 'localhost'
-    }], function (props) {
+    }], function(props) {
         this.customHost = props.customHost;
 
         cb();
@@ -140,10 +140,10 @@ Generator.prototype.askForCompass = function askForCompass() {
 Generator.prototype.copyFiles = function copyFiles() {
 
     this.directory('_dev');
+    this.directory('_test', 'test');
 
-
-    // this.mkdir('_dev/assets');
-
+    this.mkdir('_dev/fonts');
+    this.mkdir('_dev/images');
 
     this.copy('package.json', 'package.json');
     this.copy('bower.json', 'bower.json');

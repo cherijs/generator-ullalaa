@@ -1,13 +1,13 @@
 /* jshint undef: false, unused: false, -W020 */
 /* global Gumby,jQuery */
-(function ($, window, document, undefined) {
+(function($, window, document, undefined) {
     'use strict';
 
 
     //------------------------  CONSOLE FIX
     // Avoid `console` errors in browsers that lack a console.
     var method;
-    var noop = function () {};
+    var noop = function() {};
     var methods = [
         'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
         'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
@@ -26,15 +26,30 @@
     //------------------------  CONSOLE END
 
 
-    $(function () {
+    $(function() {
         // JQUERY READY, MY FUNCTIONS HERE
-        console.log('Blanky ready!!!');
+        console.log('Ulla boilerplate ready!!!');
 
         if (!Modernizr.csstransitions || !Modernizr.cssanimations || !Modernizr.svg) {
-            // $('#warning').addClass('active');
+            $('#warning').addClass('active');
         }
 
-
+        $('.open-popup-link').magnificPopup({
+            type: 'inline',
+            mainClass: 'mfp-fade',
+            removalDelay: 500,
+            callbacks: {
+                open: function() {
+                    // $(this.content).addClass('active');
+                },
+                close: function() {
+                    // $(this.content).removeClass('active');
+                }
+            },
+            midClick: true
+        });
+        $('.open-popup-warning').magnificPopup();
+        // $('.open-popup-warning').magnificPopup('open');
 
 
     });

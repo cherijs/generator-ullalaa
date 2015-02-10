@@ -1,14 +1,16 @@
-# generator-Ullalaa [![Build Status](https://secure.travis-ci.org/cherijs/generator-blanky.png?branch=master)](https://travis-ci.org/cherijs/generator-blanky)
+# generator-Ullalaa [![Build Status](https://secure.travis-ci.org/cherijs/generator-ullalaa.png?branch=master)](https://travis-ci.org/cherijs/generator-ullalaa)
 
 > [Yeoman](http://yeoman.io) generator
 
 
 ## Ullalaa is frontend web template that includes
--  HTML5 boilerplate
+- PHP HTML5 boilerplate
+- .htaccess
 - Sass
 - Modernizr
 - jQuery
-
+- Gumby Toggles & Switches
+- Magic popup
  
 
 ## Modules
@@ -36,13 +38,13 @@ Yeoman travels light. He didn't pack any generators when he moved in. You can th
 To install generator-Ullalaa from npm, run:
 
 ```bash
-$ npm install -g generator-blanky
+$ npm install -g generator-ullalaa
 ```
 
 Finally, initiate the generator:
 
 ```bash
-$ yo blanky
+$ yo ullalaa
 ```
 
 
